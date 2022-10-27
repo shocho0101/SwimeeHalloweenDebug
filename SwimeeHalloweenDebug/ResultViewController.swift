@@ -17,15 +17,15 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        number = Int.random(in: 0...9)
+        number = Int.random(in: 1...9)
+        let imageName = "halloween_chara" + String(number)
+        characterImageView.image = UIImage(named: imageName)
+        
         if number == 9 {
-            characterImageView.image = UIImage(named: "IoTMesh")
             backgroundImageView.image = UIImage(named: "bgBlue")
         } else if number > 7 {
-            characterImageView.image = UIImage(named: "camera")
             backgroundImageView.image = UIImage(named: "bgGreen")
         } else {
-            characterImageView.image = UIImage(named: "iphone")
             backgroundImageView.image = UIImage(named: "bgRed")
         }
     }
