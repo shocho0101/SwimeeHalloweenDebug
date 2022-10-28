@@ -14,6 +14,7 @@
 		CA44AAF029098FA200D86360 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA44AAEF29098FA200D86360 /* Assets.xcassets */; };
 		CA44AAF329098FA200D86360 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA44AAF129098FA200D86360 /* LaunchScreen.storyboard */; };
 		CA6126BA290AD67700ADAEF7 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6126B9290AD67700ADAEF7 /* ResultViewController.swift */; };
+		CA6126BC290BE72400ADAEF7 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6126BB290BE72400ADAEF7 /* RecordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CA44AAF229098FA200D86360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA44AAF429098FA200D86360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA6126B9290AD67700ADAEF7 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		CA6126BB290BE72400ADAEF7 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				CA44AAE829098FA200D86360 /* SceneDelegate.swift */,
 				CA44AAEA29098FA200D86360 /* ViewController.swift */,
 				CA6126B9290AD67700ADAEF7 /* ResultViewController.swift */,
+				CA6126BB290BE72400ADAEF7 /* RecordViewController.swift */,
 				CA44AAEC29098FA200D86360 /* Main.storyboard */,
 				CA44AAEF29098FA200D86360 /* Assets.xcassets */,
 				CA44AAF129098FA200D86360 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				CA44AAEB29098FA200D86360 /* ViewController.swift in Sources */,
 				CA44AAE729098FA200D86360 /* AppDelegate.swift in Sources */,
+				CA6126BC290BE72400ADAEF7 /* RecordViewController.swift in Sources */,
 				CA44AAE929098FA200D86360 /* SceneDelegate.swift in Sources */,
 				CA6126BA290AD67700ADAEF7 /* ResultViewController.swift in Sources */,
 			);
