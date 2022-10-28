@@ -24,7 +24,7 @@ class RecordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var monsterRecordArray = saveData.array(forKey: "monsterRecord") as? [Bool] ?? Array(repeating: false, count: 9)
+        let monsterRecordArray = saveData.array(forKey: "monsterRecord") as? [Bool] ?? Array(repeating: false, count: 9)
         
         if monsterRecordArray[0] == true {
             imageView0.image = UIImage(named: "halloween_chara0")
