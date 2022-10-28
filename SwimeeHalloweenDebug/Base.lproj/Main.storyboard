@@ -112,6 +112,7 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMs-ui-7Xd">
                                 <rect key="frame" x="16" y="47" width="76" height="34.333333333333343"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="もどる"/>
                                 <connections>
@@ -120,7 +121,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bJ4-ZQ-Alu"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.39607843139999999" green="0.52941176469999995" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YG8-5X-KnA" firstAttribute="top" secondItem="fMs-ui-7Xd" secondAttribute="bottom" constant="24" id="ELc-yB-6db"/>
                             <constraint firstItem="bJ4-ZQ-Alu" firstAttribute="trailing" secondItem="YG8-5X-KnA" secondAttribute="trailing" constant="16" id="cTJ-JZ-SOd"/>

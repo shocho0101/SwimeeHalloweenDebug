@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ResultViewController: UIViewController {
     
@@ -15,6 +16,7 @@ class ResultViewController: UIViewController {
     @IBOutlet var characterImageView: UIImageView!
     
     let saveData: UserDefaults = UserDefaults.standard
+    let effectSoundPlayer = try! AVAudioPlayer(data: NSDataAsset(name: "gacha_effect_sound")!.data)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +37,7 @@ class ResultViewController: UIViewController {
         monsterRecordArray[number] = true
         saveData.set(monsterRecordArray, forKey: "monsterRecord")
         
+        effectSoundPlayer.play()
     }
     
     override func viewWillAppear(_ animated: Bool) {
