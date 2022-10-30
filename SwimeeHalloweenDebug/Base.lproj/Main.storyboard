@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="dark"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="onryou.TTF">
+            <string>onryou</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -16,47 +20,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_background" translatesAutoresizingMaskIntoConstraints="NO" id="Re1-KI-gSZ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFj-Wf-ycj">
-                                <rect key="frame" x="64" y="282.66666666666669" width="247" height="247.00000000000006"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="RFj-Wf-ycj" secondAttribute="height" multiplier="1:1" id="bcq-4a-GnM"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button" image="Presentbox"/>
-                                <connections>
-                                    <segue destination="sjZ-DO-7d6" kind="presentation" modalPresentationStyle="fullScreen" id="2m4-zF-kHp"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgO-f1-ptz">
-                                <rect key="frame" x="64" y="722" width="247" height="40"/>
+                                <rect key="frame" x="32" y="650" width="311" height="64"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="7JN-ro-i9v"/>
+                                    <constraint firstAttribute="height" constant="64" id="7JN-ro-i9v"/>
                                 </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="モンスターずかん"/>
+                                <buttonConfiguration key="configuration" style="plain" title="モンスターずかん">
+                                    <fontDescription key="titleFontDescription" name="onryou" family="onryou" pointSize="28"/>
+                                </buttonConfiguration>
                                 <connections>
-                                    <segue destination="irN-HI-KdX" kind="presentation" modalPresentationStyle="fullScreen" id="U9N-ys-jSJ"/>
+                                    <segue destination="irN-HI-KdX" kind="presentation" modalPresentationStyle="fullScreen" id="GKa-Sm-8dS"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swimee_halloween" translatesAutoresizingMaskIntoConstraints="NO" id="ybT-RB-qQw">
+                                <rect key="frame" x="16" y="47" width="343" height="257.33333333333331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ybT-RB-qQw" secondAttribute="height" multiplier="4:3" id="Fm7-vh-lIr"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ea-iK-3AZ">
+                                <rect key="frame" x="32" y="546" width="311" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="THF-qk-bPm"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ガチャを引く">
+                                    <fontDescription key="titleFontDescription" name="onryou" family="onryou" pointSize="28"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="sjZ-DO-7d6" kind="presentation" modalPresentationStyle="fullScreen" id="QEQ-M7-TrM"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="RFj-Wf-ycj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="64" id="2Tb-MB-q51"/>
-                            <constraint firstItem="Re1-KI-gSZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6cQ-tH-gkg"/>
-                            <constraint firstItem="RFj-Wf-ycj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BbX-ve-tGl"/>
-                            <constraint firstItem="RFj-Wf-ycj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Whp-zL-FEk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kgO-f1-ptz" secondAttribute="trailing" constant="64" id="X7H-ds-ihx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kgO-f1-ptz" secondAttribute="bottom" constant="16" id="dCt-Jw-5yh"/>
-                            <constraint firstItem="Re1-KI-gSZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="g3I-T9-Va6"/>
-                            <constraint firstItem="Re1-KI-gSZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="g4S-Ml-exu"/>
-                            <constraint firstAttribute="bottom" secondItem="Re1-KI-gSZ" secondAttribute="bottom" id="hbR-CW-DlY"/>
-                            <constraint firstAttribute="trailing" secondItem="RFj-Wf-ycj" secondAttribute="trailing" constant="64" id="oU3-xC-T3I"/>
-                            <constraint firstItem="kgO-f1-ptz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="s3E-dV-qxf"/>
+                            <constraint firstItem="ybT-RB-qQw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0n1-a8-87e"/>
+                            <constraint firstItem="ybT-RB-qQw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1Fx-l6-8hr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6ea-iK-3AZ" secondAttribute="trailing" constant="32" id="B1K-6M-C5N"/>
+                            <constraint firstItem="6ea-iK-3AZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="T8A-29-EoI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kgO-f1-ptz" secondAttribute="trailing" constant="32" id="X7H-ds-ihx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kgO-f1-ptz" secondAttribute="bottom" constant="64" id="dCt-Jw-5yh"/>
+                            <constraint firstItem="kgO-f1-ptz" firstAttribute="top" secondItem="6ea-iK-3AZ" secondAttribute="bottom" constant="40" id="h6u-zA-5D9"/>
+                            <constraint firstItem="kgO-f1-ptz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="s3E-dV-qxf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ybT-RB-qQw" secondAttribute="trailing" constant="16" id="skO-uW-kjZ"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -72,8 +84,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swimee_halloween" translatesAutoresizingMaskIntoConstraints="NO" id="sCr-oR-JLy">
+                                <rect key="frame" x="16" y="277.33333333333337" width="343" height="257.33333333333337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sCr-oR-JLy" secondAttribute="height" multiplier="4:3" id="w2P-kw-epK"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="YG8-5X-KnA">
-                                <rect key="frame" x="16" y="121.33333333333331" width="343" height="343"/>
+                                <rect key="frame" x="16" y="234.66666666666663" width="343" height="343"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="XWq-nd-zZE">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="106.33333333333333"/>
@@ -104,7 +122,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="qVg-Ke-BPD">
-                                        <rect key="frame" x="0.0" y="236.66666666666671" width="343" height="106.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="236.66666666666666" width="343" height="106.33333333333334"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nBf-HL-5Vv">
                                                 <rect key="frame" x="0.0" y="0.0" width="106.33333333333333" height="106.33333333333333"/>
@@ -123,23 +141,30 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMs-ui-7Xd">
-                                <rect key="frame" x="16" y="63" width="76" height="34.333333333333343"/>
+                                <rect key="frame" x="16" y="63" width="73.333333333333329" height="38"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="もどる"/>
+                                <buttonConfiguration key="configuration" style="plain" title="もどる">
+                                    <fontDescription key="titleFontDescription" name="onryou" family="onryou" pointSize="24"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="back" destination="irN-HI-KdX" eventType="touchUpInside" id="RR4-3g-np9"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bJ4-ZQ-Alu"/>
-                        <color key="backgroundColor" red="0.39607843139999999" green="0.52941176469999995" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="YG8-5X-KnA" firstAttribute="top" secondItem="fMs-ui-7Xd" secondAttribute="bottom" constant="24" id="ELc-yB-6db"/>
+                            <constraint firstItem="sCr-oR-JLy" firstAttribute="centerY" secondItem="NX2-5u-Gd7" secondAttribute="centerY" id="AfV-jJ-dzs"/>
+                            <constraint firstItem="sCr-oR-JLy" firstAttribute="centerX" secondItem="NX2-5u-Gd7" secondAttribute="centerX" id="Cg8-Jp-0Rk"/>
+                            <constraint firstItem="YG8-5X-KnA" firstAttribute="centerY" secondItem="NX2-5u-Gd7" secondAttribute="centerY" id="Znl-ND-lG4"/>
+                            <constraint firstItem="YG8-5X-KnA" firstAttribute="centerX" secondItem="NX2-5u-Gd7" secondAttribute="centerX" id="a0q-cR-phs"/>
                             <constraint firstItem="bJ4-ZQ-Alu" firstAttribute="trailing" secondItem="YG8-5X-KnA" secondAttribute="trailing" constant="16" id="cTJ-JZ-SOd"/>
                             <constraint firstItem="YG8-5X-KnA" firstAttribute="leading" secondItem="bJ4-ZQ-Alu" secondAttribute="leading" constant="16" id="d6f-WN-DjH"/>
                             <constraint firstItem="fMs-ui-7Xd" firstAttribute="top" secondItem="bJ4-ZQ-Alu" secondAttribute="top" constant="16" id="fd2-4G-IGz"/>
+                            <constraint firstItem="sCr-oR-JLy" firstAttribute="leading" secondItem="bJ4-ZQ-Alu" secondAttribute="leading" constant="16" id="jIJ-tR-kaM"/>
                             <constraint firstItem="fMs-ui-7Xd" firstAttribute="leading" secondItem="bJ4-ZQ-Alu" secondAttribute="leading" constant="16" id="o0I-ml-aKX"/>
+                            <constraint firstItem="bJ4-ZQ-Alu" firstAttribute="trailing" secondItem="sCr-oR-JLy" secondAttribute="trailing" constant="16" id="r5a-C8-HOt"/>
                         </constraints>
                     </view>
                     <connections>
@@ -156,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dn3-76-OHD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="200" y="737"/>
+            <point key="canvasLocation" x="186" y="728"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="CQG-24-9bB">
@@ -166,61 +191,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgBlue" translatesAutoresizingMaskIntoConstraints="NO" id="EsD-hm-apz">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyL-6Y-KnI">
-                                <rect key="frame" x="16" y="63" width="76" height="35"/>
+                                <rect key="frame" x="16" y="63" width="73.333333333333329" height="38"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="もどる"/>
+                                <buttonConfiguration key="configuration" style="plain" title="もどる">
+                                    <fontDescription key="titleFontDescription" name="onryou" family="onryou" pointSize="24"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="back" destination="sjZ-DO-7d6" eventType="touchUpInside" id="bRp-Wj-2u8"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swimee_halloween" translatesAutoresizingMaskIntoConstraints="NO" id="9sM-rP-rDV">
+                                <rect key="frame" x="16" y="277.33333333333337" width="343" height="257.33333333333337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9sM-rP-rDV" secondAttribute="height" multiplier="4:3" id="Pbt-56-aXf"/>
+                                </constraints>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="halloween_chara1" translatesAutoresizingMaskIntoConstraints="NO" id="LgJ-Ef-zYQ">
                                 <rect key="frame" x="64" y="282.66666666666669" width="247" height="247.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="LgJ-Ef-zYQ" secondAttribute="height" multiplier="1:1" id="FKl-ZB-ylt"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ノーマル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbP-4y-MED">
+                                <rect key="frame" x="121" y="585.66666666666663" width="133" height="40"/>
+                                <fontDescription key="fontDescription" name="onryou" family="onryou" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Nja-zn-szI"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Nja-zn-szI" firstAttribute="trailing" secondItem="LgJ-Ef-zYQ" secondAttribute="trailing" constant="64" id="4U8-Ba-WJG"/>
                             <constraint firstItem="LgJ-Ef-zYQ" firstAttribute="leading" secondItem="Nja-zn-szI" secondAttribute="leading" constant="64" id="6j2-5k-RQO"/>
-                            <constraint firstItem="EsD-hm-apz" firstAttribute="trailing" secondItem="Nja-zn-szI" secondAttribute="trailing" id="8IV-rg-Bqq"/>
-                            <constraint firstItem="EsD-hm-apz" firstAttribute="top" secondItem="XpP-fS-nZ5" secondAttribute="top" id="8yZ-5b-Zsi"/>
+                            <constraint firstItem="JbP-4y-MED" firstAttribute="top" secondItem="LgJ-Ef-zYQ" secondAttribute="bottom" constant="56" id="JuM-s4-1MT"/>
                             <constraint firstItem="LgJ-Ef-zYQ" firstAttribute="centerY" secondItem="XpP-fS-nZ5" secondAttribute="centerY" id="K1a-Qe-JGf"/>
-                            <constraint firstAttribute="bottom" secondItem="EsD-hm-apz" secondAttribute="bottom" id="Lva-EE-UOG"/>
                             <constraint firstItem="LgJ-Ef-zYQ" firstAttribute="centerX" secondItem="XpP-fS-nZ5" secondAttribute="centerX" id="MdP-gd-00e"/>
+                            <constraint firstItem="JbP-4y-MED" firstAttribute="centerX" secondItem="XpP-fS-nZ5" secondAttribute="centerX" id="Psw-Re-ui0"/>
+                            <constraint firstItem="9sM-rP-rDV" firstAttribute="centerY" secondItem="XpP-fS-nZ5" secondAttribute="centerY" id="UT4-78-PMr"/>
                             <constraint firstItem="vyL-6Y-KnI" firstAttribute="top" secondItem="Nja-zn-szI" secondAttribute="top" constant="16" id="b2r-Ee-Et2"/>
-                            <constraint firstItem="EsD-hm-apz" firstAttribute="leading" secondItem="Nja-zn-szI" secondAttribute="leading" id="bfL-m0-5GT"/>
-                            <constraint firstItem="EsD-hm-apz" firstAttribute="trailing" secondItem="Nja-zn-szI" secondAttribute="trailing" id="gwp-ay-V1s"/>
-                            <constraint firstAttribute="bottom" secondItem="EsD-hm-apz" secondAttribute="bottom" id="jz2-KE-GdX"/>
+                            <constraint firstItem="Nja-zn-szI" firstAttribute="trailing" secondItem="9sM-rP-rDV" secondAttribute="trailing" constant="16" id="cAf-8B-GKm"/>
+                            <constraint firstItem="9sM-rP-rDV" firstAttribute="centerX" secondItem="XpP-fS-nZ5" secondAttribute="centerX" id="oBH-2F-9Qm"/>
                             <constraint firstItem="vyL-6Y-KnI" firstAttribute="leading" secondItem="Nja-zn-szI" secondAttribute="leading" constant="16" id="oCB-JJ-Nqm"/>
-                            <constraint firstItem="EsD-hm-apz" firstAttribute="top" secondItem="XpP-fS-nZ5" secondAttribute="top" id="rfV-rP-IdB"/>
-                            <constraint firstItem="EsD-hm-apz" firstAttribute="leading" secondItem="Nja-zn-szI" secondAttribute="leading" id="zAG-pg-k0M"/>
+                            <constraint firstItem="9sM-rP-rDV" firstAttribute="leading" secondItem="Nja-zn-szI" secondAttribute="leading" constant="16" id="tMu-Jx-vSI"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backgroundImageView" destination="EsD-hm-apz" id="0jR-m1-kv8"/>
                         <outlet property="characterImageView" destination="LgJ-Ef-zYQ" id="qHq-JL-VDE"/>
+                        <outlet property="statusLabel" destination="JbP-4y-MED" id="mli-KV-ewq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHi-JM-SQZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="847.69230769230762" y="3.5545023696682461"/>
+            <point key="canvasLocation" x="966" y="4"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Presentbox" width="800" height="800"/>
-        <image name="bgBlue" width="1170" height="2532"/>
         <image name="halloween_chara1" width="187" height="200"/>
-        <image name="top_background" width="1348" height="2048"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="swimee_halloween" width="931" height="476"/>
     </resources>
 </document>

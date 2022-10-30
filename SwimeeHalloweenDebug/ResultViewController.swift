@@ -9,11 +9,11 @@ import UIKit
 import AVFoundation
 
 class ResultViewController: UIViewController {
+
+    @IBOutlet var statusLabel: UILabel!
+    @IBOutlet var characterImageView: UIImageView!
     
     var number: Int!
-    
-    @IBOutlet var backgroundImageView: UIImageView!
-    @IBOutlet var characterImageView: UIImageView!
     
     let saveData: UserDefaults = UserDefaults.standard
     let effectSoundPlayer = try! AVAudioPlayer(data: NSDataAsset(name: "gacha_effect_sound")!.data)
@@ -26,11 +26,11 @@ class ResultViewController: UIViewController {
         characterImageView.image = UIImage(named: imageName)
         
         if number == 8 {
-            backgroundImageView.image = UIImage(named: "bgBlue")
+            statusLabel.text = "超レア"
         } else if number > 7 {
-            backgroundImageView.image = UIImage(named: "bgGreen")
+            statusLabel.text = "レア"
         } else {
-            backgroundImageView.image = UIImage(named: "bgRed")
+            statusLabel.text = "ノーマル"
         }
         
         var monsterRecordArray = saveData.array(forKey: "monsterRecord") as? [Bool] ?? Array(repeating: false, count: 9)
