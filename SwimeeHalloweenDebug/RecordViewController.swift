@@ -57,7 +57,7 @@ class RecordViewController: UIViewController {
         }
         
         if monsterRecordArray[5] == true {
-            imageView5.image = UIImage(named: "halloween_chara5")
+            imageView5.image = UIImage(named: "halloween_chara4")
         } else {
             imageView5.image = UIImage(named: "question")
         }
@@ -81,7 +81,7 @@ class RecordViewController: UIViewController {
         }
     }
     
-    @IBAction func back() {
+    @IBAction func dack() {
         dismiss(animated: true)
     }
 }
