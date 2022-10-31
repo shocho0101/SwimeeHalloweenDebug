@@ -27,7 +27,7 @@ class ResultViewController: UIViewController {
         
         if number == 8 {
             statusLabel.text = "超レア"
-        } else if number > 7 {
+        } else if 5 < number {
             statusLabel.text = "レア"
         } else {
             statusLabel.text = "ノーマル"
